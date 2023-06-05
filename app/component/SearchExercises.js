@@ -48,7 +48,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       </div>
       <div className=" flex justify-center my-4">
         <input
-          className="py-1 px-2 w-[300px] md:w-[1000px] border border-red-200 rounded-l-sm focus:outline-none text-black font-medium "
+          className="py-1 px-2 w-[300px] md:w-[450px] border border-red-200 rounded-l-sm focus:outline-none text-black font-medium "
           type="text"
           placeholder="search exercise"
           value={search}
@@ -61,7 +61,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           Search
         </button>
       </div>
-      <div className="border-2 w-full relative p-4">
+      <div className=" mx-20 relative py-4">
         <HorizontalScrollBar
           data={bodyParts}
           bodyPart={bodyPart}

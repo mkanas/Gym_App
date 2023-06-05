@@ -10,6 +10,7 @@ import Exercises from "../component/Exercises";
 const Home = () => {
   const [bodyPart, setBodyPart] = useState("all");
   const [exercises, setExercises] = useState([]);
+
   return (
     <div>
       <Navbar />
@@ -21,8 +22,8 @@ const Home = () => {
       />
       <Exercises
         setExercises={setExercises}
+        exercises={exercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
       />
       <Footer />
     </div>

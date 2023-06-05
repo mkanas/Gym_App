@@ -1,29 +1,49 @@
 "use client";
-import Image from "next/image";
-import React from "react";
+
+import React, { useRef } from "react";
 import BodyParts from "./BodyParts";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const HorizontalScrollBar = ({ data, bodyPart, setBodyPart }) => {
+  const sliderRef = useRef(null);
+
+  const scrollLeft = () => {
+    const slider = sliderRef.current;
+    slider.scrollLeft -= 500;
+  };
+
+  const scrollRight = () => {
+    const slider = sliderRef.current;
+    slider.scrollLeft += 500;
+  };
+
   return (
-    <div className="  w-full relative flex items-center">
+    <div className=" relative flex items-center">
+      <MdChevronLeft
+        className="text-red-500 cursor-pointer "
+        onClick={scrollLeft}
+        size={40}
+      />
+
       <div
-        id="slider"
-        className=" flex h-[180px] w-full overflow-x-scroll bg-black scroll whitespace-nowrap scroll-smoot "
+        className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth"
+        style={{ overflowX: "hidden" }}
+        ref={sliderRef}
       >
         {data.map((item) => (
-          <div
-            key={item.id || item}
-            itemID={item.id || item}
-            title={item.id || item}
-          >
-            <BodyParts
-              item={item}
-              bodyPart={bodyPart}
-              setBodyPart={setBodyPart}
-            />
-          </div>
+          <BodyParts
+            key={item.id}
+            item={item}
+            bodyPart={bodyPart}
+            setBodyPart={setBodyPart}
+          />
         ))}
       </div>
+      <MdChevronRight
+        className="text-red-500 cursor-pointer  "
+        onClick={scrollRight}
+        size={40}
+      />
     </div>
   );
 };
