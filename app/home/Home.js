@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Footer from "../component/Footer";
-import Navbar from "../component/Navbar";
 import HeroBanner from "../component/HeroBanner";
 import SearchExercises from "../component/SearchExercises";
 import Exercises from "../component/Exercises";
@@ -13,7 +11,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <HeroBanner />
       <SearchExercises
         setExercises={setExercises}
@@ -25,7 +22,6 @@ const Home = () => {
         exercises={exercises}
         bodyPart={bodyPart}
       />
-      <Footer />
     </div>
   );
 };

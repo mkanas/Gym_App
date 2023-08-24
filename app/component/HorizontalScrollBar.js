@@ -1,20 +1,22 @@
+/* eslint-disable react/jsx-key */
 "use client";
 
 import React, { useRef } from "react";
 import BodyParts from "./BodyParts";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import ExerciseCard from "./ExerciseCard";
 
-const HorizontalScrollBar = ({ data, bodyPart, setBodyPart }) => {
+const HorizontalScrollBar = ({ data, bodyPart, setBodyPart, isBodyParts }) => {
   const sliderRef = useRef(null);
 
   const scrollLeft = () => {
     const slider = sliderRef.current;
-    slider.scrollLeft -= 500;
+    slider.scrollLeft -= 450;
   };
 
   const scrollRight = () => {
     const slider = sliderRef.current;
-    slider.scrollLeft += 500;
+    slider.scrollLeft += 450;
   };
 
   return (
@@ -30,14 +32,18 @@ const HorizontalScrollBar = ({ data, bodyPart, setBodyPart }) => {
         style={{ overflowX: "hidden" }}
         ref={sliderRef}
       >
-        {data.map((item) => (
-          <BodyParts
-            key={item.id}
-            item={item}
-            bodyPart={bodyPart}
-            setBodyPart={setBodyPart}
-          />
-        ))}
+        {data.map((item) =>
+          isBodyParts ? (
+            <BodyParts
+              key={item.id}
+              item={item}
+              bodyPart={bodyPart}
+              setBodyPart={setBodyPart}
+            />
+          ) : (
+            <ExerciseCard exercise={item} />
+          )
+        )}
       </div>
       <MdChevronRight
         className="text-red-500 cursor-pointer  "

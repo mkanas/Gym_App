@@ -27,6 +27,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
       );
+      console.log(exercisesData);
       const searchedExercises = exercisesData.filter(
         (exercise) =>
           exercise.name.toLowerCase().includes(search) ||
@@ -40,15 +41,15 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   };
 
   return (
-    <div className="mx-5 md:mx-5">
-      <div className="font-bold text-2xl md:text-4xl text-center text-black">
+    <div className="px-5 py-8  bg-[#F9FCFC] md:px-5">
+      <div className="font-bold mt-[35px] text-2xl md:text-4xl text-center text-black">
         <h1>
           Awesome Exercises You <br /> Should Know
         </h1>
       </div>
       <div className=" flex justify-center my-4">
         <input
-          className="py-1 px-2 w-[300px] md:w-[450px] border border-red-200 rounded-l-sm focus:outline-none text-black font-medium "
+          className="py-1 px-2 w-[280px] md:w-[450px] border border-red-200 rounded-l-sm focus:outline-none text-black font-medium "
           type="text"
           placeholder="search exercise"
           value={search}
@@ -66,6 +67,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           data={bodyParts}
           bodyPart={bodyPart}
           setBodyPart={setBodyPart}
+          isBodyParts
         />
       </div>
     </div>

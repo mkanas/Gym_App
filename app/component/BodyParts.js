@@ -8,10 +8,10 @@ const BodyParts = ({ item, setBodyPart, bodyPart }) => {
     <div
       itemID={item.id || item}
       title={item.id || item}
-      className=" inline-block  flex-shrink-0 text-center min-w-[270px]  my-2 items-center cursor-pointer hover:scale-110 delay-100 transition duration-250 ease-in-out "
+      className=" inline-block min-w-[100px] flex-shrink-0 text-center md:min-w-[270px]  my-2 items-center cursor-pointer hover:scale-110 delay-100 transition duration-250 ease-in-out "
       onClick={() => {
         setBodyPart(item);
-        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+        window.scrollTo({ top: 1800, left: 50, behavior: "smooth" });
       }}
     >
       <Image

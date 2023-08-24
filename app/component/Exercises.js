@@ -37,18 +37,19 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
+
       setExercises(exercisesData);
     };
     fetchExercisesData();
   }, [bodyPart]);
 
   return (
-    <section id="exercises" className="md:mx-[50px] text-black p-[20px]">
+    <section id="exercises" className="md:mx-[50px]  text-black p-[20px]">
       <div className="text-3xl md:flex flex justify-center font-bold">
         Showing Result
       </div>
-      <div className="flex justify-center  items-center ">
-        <div className="grid gap-x-[80px]  md:grid-cols-3 ">
+      <div className="flex justify-center items-center ">
+        <div className="grid gap-x-[80px] md:grid-cols-3 ">
           {currentExercises.map((exercise, index) => (
             <ExerciseCard key={index} exercise={exercise} />
           ))}

@@ -7,7 +7,7 @@ const DetailPage = (params) => {
 
   return (
     <div>
-      <ExerciseDetail exerciseId={id} />
+      <ExerciseDetail id={id} />
     </div>
   );
 };
