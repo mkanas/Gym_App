@@ -9,20 +9,23 @@ const Detail = ({ exerciseDetail }) => {
     {
       icon: "/assets/weight.png",
       name: equipment,
+      id: 1,
     },
     {
       icon: "/assets/abs.png",
       name: bodyPart,
+      id: 2,
     },
 
     {
       icon: "/assets/sche.png",
       name: target,
+      id: 3,
     },
   ];
 
   return (
-    <div className="md:flex md:flex-row p-[20px] items-center ">
+    <div className="md:flex  md:mt-[60px] mt-[60px] md:flex-row p-[20px] items-center ">
       <Image width={500} height={400} src={gifUrl} alt={name} loading="lazy" />
       <div className="text-justify md:text-base text-sm">
         <p className="font-bold  text-2xl capitalize mb-4">{name}</p>
@@ -32,7 +35,7 @@ const Detail = ({ exerciseDetail }) => {
         </p>
 
         {extraDetails.map((item) => (
-          <div key={item.name} className="flex mt-4  gap-4 flex-grow">
+          <div key={item.id} className="flex mt-4  gap-4 flex-grow">
             <button className="p-1 bg-green-400 text-sm rounded-lg">
               <Image
                 src={item.icon}

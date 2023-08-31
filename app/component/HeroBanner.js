@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroBanner = () => {
   return (
-    <div className=" p-1 h-full bg-[#4ac2ca] w-full bg-gradient-to-b from-[#4ac2ca] to-[#F9FCFC] ">
+    <div className=" relative z-0 p-1 h-full  mt-8 w-full bg-white ">
       <div className="mx-5 md:m-20 md:my-[70px] my-[40px] md:flex justify-center">
         <section className=" md:mr-[180px] my-10 md:my-16">
           <Image
@@ -26,7 +26,7 @@ const HeroBanner = () => {
               </button>
             </div>
 
-            <div className="text-[#2bd1dd] underline underline-offset-4 rounded-lg py-1 px-3 bg-white font-semibold ">
+            <div className="text-[#2bd1dd] border border-[#2bd1dd] underline underline-offset-4 rounded-lg py-1 px-3 bg-white font-semibold ">
               <button className="hover:scale-110 delay-100 transition duration-300 ease-in-out">
                 Learn More
               </button>
@@ -34,7 +34,7 @@ const HeroBanner = () => {
           </div>
         </section>
         <section className="md:relative md:block hidden md:z-20 w-[240px] ">
-          <div className="absolute left-[121px] border solid 1px -z-10 h-[150px] px-4 py-2  w-[150px]">
+          <div className="absolute left-[129px] border border-black solid 1px -z-10 h-[150px] px-4 py-2  w-[150px]">
             <p className="capitalize font-semibold ">
               {" "}
               <span className="text-3xl ">100%</span> progres not perfections
@@ -52,7 +52,7 @@ const HeroBanner = () => {
               99% positive boost
             </p>
           </div>
-          <div className="bg-[#2bd1dd] absolute h-[200px] px-4 py-2 border border-[#ffffff] solid 2px w-[200px] align-middle items-center left-[40px] bottom-[-89px]">
+          <div className="bg-[#2bd1dd] absolute h-[200px] px-4 py-2 border border-[#ffffff] solid 2px w-[200px] align-middle items-center left-[67px] bottom-[-89px]">
             <Image src="/assets/coma.png" alt="typing" width={50} height={50} />
             <p className="uppercase w-full text-white h-full font-medium justify-center text-center mt-3 items-center px-3 py-1 ">
               make it happen. shock every one !!
@@ -60,7 +60,7 @@ const HeroBanner = () => {
           </div>
         </section>
         <section className="relative  align-middle items-center z-20 overflow-auto ">
-          <div className="bg-[#110900] absolute ml-6 mt-[125px]  -z-10 h-[300px] w-[280px]"></div>
+          <div className="bg-[#110900] absolute ml-6 mt-[125px]  -z-10 h-[300px] w-[270px]"></div>
 
           <Image
             src="/assets/hero_image.png"

@@ -56,7 +56,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
         <button
-          className="bg-red-700 py-1 px-2 hover:bg-red-800 font-semibold"
+          className="bg-red-700 py-1 text-white px-2 hover:bg-red-800 font-semibold"
           onClick={handleSearch}
         >
           Search

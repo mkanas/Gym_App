@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { Link } from "@mui/material";
 
 const Footer = () => {
   const listFooter = [
@@ -26,12 +27,14 @@ const Footer = () => {
   return (
     <div className="bg-gray-800 md:w-full relative w-auto  md:px-[100px]">
       <div className=" md:flex hidden md:justify-between px-5 py-6 items-center mt-4 ">
-        <Image
-          src="/assets/HomePageText.png"
-          alt="logo footer"
-          width={120}
-          height={120}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/HomePageText.png"
+            alt="logo footer"
+            width={120}
+            height={120}
+          />
+        </Link>
         <div className="flex flex-row">
           {listFooter.map((item) => (
             <div className="text-white  px-4" key={item.id}>

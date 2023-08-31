@@ -8,8 +8,8 @@ const SimilarExercises = ({
   equipmentMuscleExercises,
 }) => {
   return (
-    <div className="mx-7">
-      <p className=" mt-8 font-semibold text-2xl ml-6">
+    <div className="mx-7 mt-[80px] ">
+      <p className="  font-semibold text-center text-2xl ml-6">
         The exercise that target with same muscle group
       </p>
       <div>
@@ -19,7 +19,7 @@ const SimilarExercises = ({
           <Loader />
         )}
       </div>
-      <p className="mb-4 font-semibold text-2xl ml-6">
+      <p className="mb-4 text-center font-semibold text-2xl ml-6">
         The exercise that use the same equipment
       </p>
       <div>

@@ -44,7 +44,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   }, [bodyPart]);
 
   return (
-    <section id="exercises" className="md:mx-[50px]  text-black p-[20px]">
+    <section id="exercises" className="md:mx-[50px] text-black p-[20px]">
       <div className="text-3xl md:flex flex justify-center font-bold">
         Showing Result
       </div>
@@ -55,9 +55,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           ))}
         </div>
       </div>
-      <nav className="flex justify-center bg-white rounded-lg font-[Poppins]">
+      <nav className="flex justify-center  rounded-lg font-[Poppins]">
         {exercises.length > 9 && (
-          <div className="border-2 border-orange-100 rounded-lg ">
+          <di v className="border-2  border-orange-200 rounded-lg ">
             <Pagination
               color="standard"
               shape="rounded"
@@ -65,9 +65,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
               count={Math.ceil(exercises.length / exercisePerPage)}
               page={currentPage}
               onChange={paginate}
-              size="large"
+              size="small"
             />
-          </div>
+          </di>
         )}
       </nav>
     </section>

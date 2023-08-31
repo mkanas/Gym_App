@@ -24,15 +24,18 @@ const Navbar = () => {
   ];
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="bg-[#4ac2ca] w-full  left-0 top-0  z-10 transition-all ease-in duration-300 ">
+    <nav className="bg-white w-full fixed left-0 top-0  z-10  transition-all ease-in duration-300 ">
       <div className="max-w-[1240px]  flex justify-between items-center p-[14px] text-white">
         <div className="font-font-family  w-full  text-xs font-semibold flex  justify-start md:justify-around items-center">
-          <Image
-            src="/assets/HomePageText.png"
-            alt="logo"
-            width={150}
-            height={50}
-          />
+          <Link href={"/"}>
+            <Image
+              src="/assets/HomePageText.png"
+              alt="logo"
+              width={150}
+              height={50}
+            />
+          </Link>
+
           <div className=" hidden md:flex md:items-center md:justify-center">
             <div className="flex flex-row">
               {listNavbar.map((item) => (
@@ -79,7 +82,7 @@ const Navbar = () => {
             )}
           </button>
           <div
-            className={` left-0 bg-[#4ac2ca] text-xs  p-3 w-full absolute transition-all ease-in duration-300 font-font-family ${
+            className={` left-0 bg-white text-xs  p-3 w-full absolute transition-all ease-in duration-300 font-font-family ${
               navbar
                 ? "top-[79px] opacity-100 "
                 : "top-[-1490px] md:opacity-100 opacity-0"
