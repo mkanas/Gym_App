@@ -41,7 +41,7 @@ const HorizontalScrollBar = ({ data, bodyPart, setBodyPart, isBodyParts }) => {
                 setBodyPart={setBodyPart}
               />
             ) : (
-              <ExerciseCard exercise={item} key={item.id} />
+              <ExerciseCard exercise={item} key={item.id || index} />
             )
           )}
         </div>
