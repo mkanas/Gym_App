@@ -42,7 +42,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   return (
     <div className="px-5 py-8  bg-[#F9FCFC] md:px-5">
-      <div className="font-bold mt-[35px] text-2xl md:text-4xl text-center text-black">
+      <div className="font-bold md:mt-[35px] text-2xl md:text-4xl text-center text-black">
         <h1>
           Awesome Exercises You <br /> Should Know
         </h1>

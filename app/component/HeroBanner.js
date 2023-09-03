@@ -13,7 +13,7 @@ const HeroBanner = () => {
             width={350}
             height={350}
           />
-          <p className="text-rose-950 m y-5 text-justify md:w-[400px]  ">
+          <p className="text-rose-950 my-5 text-justify md:w-[400px]  ">
             Change starts here. Join our gym and experience newfound strength
             and fitness in your life. Enhance the quality of your life through
             fitness. Join our gym and embrace a healthier, more vibrant
@@ -59,8 +59,8 @@ const HeroBanner = () => {
             </p>
           </div>
         </section>
-        <section className="relative align-middle items-center z-20 overflow-auto ">
-          <div className="bg-[#110900] absolute ml-6 mt-[125px]  -z-10 h-[300px] w-[270px]"></div>
+        <section className="relative md:block hidden align-middle items-center z-20 overflow-auto ">
+          <div className="bg-[#110900]  absolute ml-6 mt-[125px]  -z-10 h-[300px] w-[270px]"></div>
 
           <Image
             src="/assets/hero_image.png"
