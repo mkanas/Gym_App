@@ -25,7 +25,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className="bg-white w-full fixed left-0 top-0  z-10  transition-all ease-in duration-300 ">
-      <div className="max-w-[1240px]  flex justify-between items-center p-[14px] text-white">
+      <div className="max-w-[1440px] mx-auto flex justify-between items-center p-[14px] text-white">
         <div className="font-font-family  w-full  text-xs font-semibold flex  justify-start md:justify-around items-center">
           <Link href={"/"}>
             <Image

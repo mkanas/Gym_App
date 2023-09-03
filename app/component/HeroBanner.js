@@ -59,7 +59,7 @@ const HeroBanner = () => {
             </p>
           </div>
         </section>
-        <section className="relative  align-middle items-center z-20 overflow-auto ">
+        <section className="relative bg-[#110900] w-full align-middle items-center z-20 overflow-auto ">
           <div className="bg-[#110900] absolute ml-6 mt-[125px]  -z-10 h-[300px] w-[270px]"></div>
 
           <Image
