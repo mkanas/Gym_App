@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroBanner = () => {
   return (
-    <div className=" relative z-0 p-1 h-full  mt-8 w-full bg-white ">
+    <div className=" relative z-0 p-1 h-screen  mt-10 w-full bg-[#d6dbb7]">
       <div className="mx-5 md:m-20 md:my-[70px] my-[40px] md:flex justify-center">
         <section className=" md:mr-[180px] my-10 md:my-16">
           <Image
