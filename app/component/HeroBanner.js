@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroBanner = () => {
   return (
-    <div className=" relative z-0 p-1 h-screen  mt-10 w-full bg-[#d6dbb7]">
+    <div className=" relative z-0 p-1 h-screen  mt-10 w-full bg-[#ffffff]">
       <div className="mx-5 md:m-20 md:my-[70px] my-[40px] md:flex justify-center">
         <section className=" md:mr-[180px] my-10 md:my-16">
           <Image
@@ -40,7 +40,7 @@ const HeroBanner = () => {
               <span className="text-3xl ">100%</span> progres not perfections
             </p>
           </div>
-          <div className="absolute ml-[18px] z-20 w-[140px] border 1px solid bg-[#1ce25e] py-[8px] px-[10px] rounded-full mt-[100px]">
+          <div className="absolute ml-[18px] z-20 w-[140px] border 1px solid bg-[#39c264] py-[8px] px-[10px] rounded-full mt-[100px]">
             <p className=" text-[10px] text-white font-medium justify-between items-center text-center flex">
               {" "}
               <Image
@@ -52,7 +52,7 @@ const HeroBanner = () => {
               99% positive boost
             </p>
           </div>
-          <div className="bg-[#2bd1dd] absolute h-[200px] px-4 py-2 border border-[#ffffff] solid 2px w-[200px] align-middle items-center left-[67px] bottom-[-89px]">
+          <div className="bg-[#44c3cc] absolute h-[200px] px-4 py-2 border border-[#ffffff] solid 2px w-[200px] align-middle items-center left-[67px] bottom-[-89px]">
             <Image src="/assets/coma.png" alt="typing" width={50} height={50} />
             <p className="uppercase w-full text-white h-full font-medium justify-center text-center mt-3 items-center px-3 py-1 ">
               make it happen. shock every one !!
